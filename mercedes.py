@@ -8,11 +8,15 @@ internal_return = mercedes["Internal Return"]
 marketCapitalization = mercedes["Market Capitalization"]
 profit = mercedes["Profit"]
 stockPrice = mercedes["Mercedes-Benz"]
+stockPriceHigh = stockPrice.max()
+
+
 
 
 plt.title("Mercedes Stock Price")
 plt.ylabel("Price per Stock")
 plt.xlabel("Date")
+plt.ylim(0,stockPriceHigh)
 plt.plot(date,stockPrice)
 plt.show()
 
